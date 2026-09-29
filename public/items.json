@@ -117,7 +117,7 @@
     "type": "passive",
     "description": "HP up",
     "quality": 2,
-    "icon": "/public/passive-items-icons/<3.png"
+    "icon": "/public/passive-items-icons/Less Than Three.png"
   },
   {
     "id": 16,
@@ -341,7 +341,7 @@
     "type": "active",
     "description": "Teleport!",
     "quality": 0,
-    "icon": "/public/active-items-icons/Teleport!.png"
+    "icon": "/public/active-items-icons/Teleport.png"
   },
   {
     "id": 45,
@@ -458,10 +458,10 @@
   {
     "id": 59,
     "name": "The Book of Belial",
-    "type": "passive",
+    "type": "active",
     "description": "Temporary DMG up",
     "quality": 0,
-    "icon": "/public/passive-items-icons/The Book of Belial.png"
+    "icon": "/public/active-items-icons/The Book of Belial.png"
   },
   {
     "id": 60,
@@ -937,19 +937,19 @@
   },
   {
     "id": 120,
-    "name": "Odd Mushroom",
+    "name": "Odd Mushroom (skinny)",
     "type": "passive",
     "description": "Tears up + damage down",
     "quality": 2,
-    "icon": "/public/passive-items-icons/Odd Mushroom.png"
+    "icon": "/public/passive-items-icons/Odd Mushroom (skinny).png"
   },
   {
     "id": 121,
-    "name": "Odd Mushroom",
+    "name": "Odd Mushroom (fat)",
     "type": "passive",
     "description": "HP + DMG up, speed down",
     "quality": 2,
-    "icon": "/public/passive-items-icons/Odd Mushroom.png"
+    "icon": "/public/passive-items-icons/Odd Mushroom (fat).png"
   },
   {
     "id": 122,
@@ -1477,7 +1477,7 @@
     "type": "passive",
     "description": "Swing it",
     "quality": 1,
-    "icon": "/public/passive-items-icons/Guppy's Hairball.png"
+    "icon": "/public/passive-items-icons/Guppy's Hair Ball.png"
   },
   {
     "id": 188,
@@ -1605,7 +1605,7 @@
     "type": "passive",
     "description": "1+1 free 4Evar",
     "quality": 3,
-    "icon": "/public/passive-items-icons/Humbleing Bundle.png"
+    "icon": "/public/passive-items-icons/Humbling Bundle.png"
   },
   {
     "id": 204,
@@ -1933,7 +1933,7 @@
     "type": "passive",
     "description": "Double shot",
     "quality": 4,
-    "icon": "/public/passive-items-icons/20/20.png"
+    "icon": "/public/passive-items-icons/20 20.png"
   },
   {
     "id": 246,
@@ -2533,7 +2533,7 @@
     "type": "passive",
     "description": "Controlled friend",
     "quality": 1,
-    "icon": "/public/passive-items-icons/???'s Only Friend.png"
+    "icon": "/public/passive-items-icons/Blue Baby's Only Friend.png"
   },
   {
     "id": 321,
@@ -3845,7 +3845,7 @@
     "type": "active",
     "description": "I can't believe it's not butter bean!",
     "quality": 1,
-    "icon": "/public/active-items-icons/Wait What?.png"
+    "icon": "/public/active-items-icons/Wait What.png"
   },
   {
     "id": 485,
@@ -4373,7 +4373,7 @@
     "type": "active",
     "description": "It feels cursed",
     "quality": 4,
-    "icon": "/public/active-items-icons/Broken Shovel.png"
+    "icon": "/public/active-items-icons/Broken Shovel 1 (handle).png"
   },
   {
     "id": 551,
@@ -4381,7 +4381,7 @@
     "type": "passive",
     "description": "It feels cursed",
     "quality": 4,
-    "icon": "/public/passive-items-icons/Broken Shovel.png"
+    "icon": "/public/active-items-icons/Broken Shovel 1 (handle).png"
   },
   {
     "id": 552,
@@ -4642,10 +4642,10 @@
   {
     "id": 584,
     "name": "Book of Virtues",
-    "type": "passive",
+    "type": "active",
     "description": "Spiritual companionship",
     "quality": 3,
-    "icon": "/public/passive-items-icons/Book of Virtues.png"
+    "icon": "/public/active-items-icons/Book of Virtues.png"
   },
   {
     "id": 585,
@@ -4957,7 +4957,7 @@
     "type": "passive",
     "description": "???",
     "quality": 0,
-    "icon": "/public/passive-items-icons/Knife Piece 1.png"
+    "icon": "/public/passive-items-icons/Knife Piece 1 (handle).png"
   },
   {
     "id": 627,
@@ -4965,7 +4965,7 @@
     "type": "passive",
     "description": "???",
     "quality": 0,
-    "icon": "/public/passive-items-icons/Knife Piece 2.png"
+    "icon": "/public/passive-items-icons/Knife Piece 2 (blade).png"
   },
   {
     "id": 628,
@@ -5178,10 +5178,10 @@
   {
     "id": 656,
     "name": "Damocles",
-    "type": "passive",
+    "type": "active",
     "description": "A king's fortune... but at what cost?",
     "quality": 2,
-    "icon": "/public/passive-items-icons/Damocles.png"
+    "icon": "/public/active-items-icons/Damocles.png"
   },
   {
     "id": 657,
