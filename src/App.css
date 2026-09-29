@@ -1,0 +1,125 @@
+:root {
+  --background: rgb(16, 15, 15);
+  --article-bgcolor: rgb(41, 41, 41);
+  --text-color: rgb(226, 226, 226);
+  --text-muted: rgb(59, 59, 59);
+}
+
+body {
+    font-family: 'Pixelify Sans', sans-serif;
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
+}
+
+.app-container {
+  min-height: 100vh;
+  /* CSS Grid Layout */
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Header (auto), Main (todo lo que sobre), Footer (auto) */
+  justify-items: center;            /* Centra los bloques horizontalmente */
+  box-sizing: border-box;
+}
+
+/* Header */
+
+.web-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  color: var(--text-color);
+}
+
+.separator {
+  width: 90vh;
+  height: 1px;
+  background-color: var(--text-color);
+}
+
+/* Main */
+
+
+
+/* Footer */
+
+.web-footer {
+  border-top: 1px solid var(--text-color);
+  width: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-text {
+  color: var(--text-muted);
+}
+
+/* Item Card */
+
+.item-card {
+  background-color: var(--article-bgcolor);
+  color: var(--text-color);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.item-card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-card-separator {
+  width: 90%;
+  height: 1px;
+  background-color: var(--text-color);
+  opacity: 40%;
+}
+
+.item-icon {
+  width: 128px;
+}
+
+/* Item List */
+
+.item-list-grid {
+  display: grid;
+  /* Define 3 columnas de igual tamaño en pantallas medianas y grandes */
+  grid-template-columns: repeat(3, minmax(200px, 300px));
+  gap: 1.5rem;             /* Espaciado uniforme entre las tarjetas */
+  width: 100%;
+  margin: 2rem auto;       /* Centra el contenedor en el main */
+  box-sizing: content-box;
+}
+
+/* Search Bar */
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.search-input {
+  width: 60vh;
+  height: 12px;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  background-color: var(--article-bgcolor);
+  color: var(--text-color);
+  border: none;
+}
+
+/* Loading */
+.loading {
+  color: var(--text-color);
+}
+
+.loading-container {
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+}

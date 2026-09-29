@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "The Sad Onion",
+    "type": "Passive",
+    "description": "Tears up (+0.7)",
+    "quality": 3,
+    "icon": "/src/assets/passive-items-icons/The Sad Onion.png"
+  },
+  {
+    "id": 2,
+    "name": "The Inner Eye",
+    "type": "Passive",
+    "description": "Triple shot, Tears down",
+    "quality": 3,
+    "icon": "/src/assets/passive-items-icons/The Inner Eye.png"
+  },
+  {
+    "id": 3,
+    "name": "Spoon Bender",
+    "type": "Passive",
+    "description": "Homing tears",
+    "quality": 3,
+    "icon": "/src/assets/passive-items-icons/Spoon Bender.png"
+  },
+  {
+    "id": 4,
+    "name": "Brimstone",
+    "type": "Passive",
+    "description": "Blood laser stream",
+    "quality": 4,
+    "icon": "/src/assets/passive-items-icons/Brimstone.png"
+  },
+  {
+    "id": 5,
+    "name": "Yum Heart",
+    "type": "Active",
+    "description": "Gives 1 Red Heart",
+    "quality": 1,
+    "icon": "/src/assets/active-items-icons/Yum Heart.png"
+  }
+]
