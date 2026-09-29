@@ -11,7 +11,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState('')
 
   useEffect(() => {
-  fetch('/items.json')
+  fetch('/public/items.json')
     .then((response) => response.json())
     .then((data) => {
       // Simulamos 1 segundo de retardo de red (1000 ms)
