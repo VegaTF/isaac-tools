@@ -5,6 +5,10 @@
   --text-muted: rgb(59, 59, 59);
 }
 
+* {
+  box-sizing: border-box
+}
+
 body {
     font-family: 'Pixelify Sans', sans-serif;
     background-color: var(--background);
@@ -14,11 +18,18 @@ body {
 
 .app-container {
   min-height: 100vh;
+  min-width: 100vw;
   /* CSS Grid Layout */
   display: grid;
   grid-template-rows: auto 1fr auto; /* Header (auto), Main (todo lo que sobre), Footer (auto) */
   justify-items: center;            /* Centra los bloques horizontalmente */
   box-sizing: border-box;
+}
+
+.separator {
+  width: 70%;
+  height: 1px;
+  background-color: var(--text-color);
 }
 
 /* Header */
@@ -27,27 +38,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-width: 100%;
 }
 
 .title {
   color: var(--text-color);
 }
 
-.separator {
-  width: 90vh;
-  height: 1px;
-  background-color: var(--text-color);
-}
-
-/* Main */
-
-
-
 /* Footer */
 
 .web-footer {
-  border-top: 1px solid var(--text-color);
-  width: 90vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,11 +88,10 @@ body {
 
 .item-list-grid {
   display: grid;
-  /* Define 3 columnas de igual tamaño en pantallas medianas y grandes */
-  grid-template-columns: repeat(3, minmax(200px, 300px));
-  gap: 1.5rem;             /* Espaciado uniforme entre las tarjetas */
-  width: 100%;
-  margin: 2rem auto;       /* Centra el contenedor en el main */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  width: 60vw;
+  margin: 2rem auto;
   box-sizing: content-box;
 }
 
@@ -103,8 +103,7 @@ body {
 }
 
 .search-input {
-  width: 60vh;
-  height: 12px;
+  width: 80%;
   padding: 1rem;
   border-radius: 0.3rem;
   background-color: var(--article-bgcolor);
