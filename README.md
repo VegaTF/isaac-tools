@@ -16,5 +16,5 @@ npm install
 npm run dev
 ```
 
-Open the URL shown by Vite or use the GitHub deployment URL: `https://vegatf.github.io/isaac-tools/`.
+Open the URL shown by Vite or use the GitHub deployment [URL](https://vegatf.github.io/isaac-tools/).
 
