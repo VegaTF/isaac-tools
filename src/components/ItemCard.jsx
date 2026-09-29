@@ -4,7 +4,7 @@ export function ItemCard({ item }) {
     return(
         <article className="item-card">
             <header className="item-card-header">
-                <img src={icon || 'https://via.placeholder.com/64'} alt={`{Icono de ${name}`} className="item-icon"/>
+                <img src={icon} alt={`{Icono de ${name}`} className="item-icon"/>
                 <h2>{name}</h2>
             </header>
             <div className="item-card-separator"></div>

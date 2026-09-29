@@ -11,17 +11,21 @@ function App() {
   const [searchTerm, setSearchTerm] = useState('')
 
   useEffect(() => {
-  fetch('/public/items.json')
-    .then((response) => response.json())
-    .then((data) => {
-      // Simulamos 1 segundo de retardo de red (1000 ms)
-      setTimeout(() => {
-        setItems(data)
-        setLoading(false)
-      }, 1000)
-    })
-    .catch((error) => console.error('Error cargando los datos:', error))
-  }, [])
+    fetch('/isaac-tools/public/items.json')
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Error al cargar items.json');
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setTimeout(() => {
+          setItems(data);
+          setLoading(false);
+        }, 1000);
+      })
+      .catch((error) => console.error('Error cargando los datos:', error));
+  }, []);
 
   // 2. Filtramos la variable de estado 'items'
   const filteredItems = items.filter((item) =>
