@@ -11,7 +11,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState('')
 
   useEffect(() => {
-    fetch('/isaac-tools/public/items.json')
+    fetch('/public/items.json')
       .then((response) => {
         if (!response.ok) {
           throw new Error('Error al cargar items.json');
