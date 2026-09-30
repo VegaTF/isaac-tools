@@ -1,17 +1,23 @@
 export function ItemCard({ item }) {
-    const { name, type, description, quality, icon } = item
+    const { id, name, type, description, quality, icon } = item
 
     return(
         <article className="item-card">
             <header className="item-card-header">
-                <img src={icon} alt={`{Icono de ${name}`} className="item-icon"/>
-                <h2>{name}</h2>
+                <h3 className="item-id">#{id}</h3>
+                <h3 className="item-quality">Q{quality}</h3>
             </header>
-            <div className="item-card-separator"></div>
-            <h3>{type}</h3>
-            <p>Quality: {quality}</p>
-            <div className="item-card-separator"></div>
-            <p>{description}</p>
+
+            <div className="item-icon-container">
+                <img src={icon} alt={`{Icono de ${name}`} className="item-icon"/>
+            </div>
+            <main>
+                <h2 className="item-name">{name}</h2>
+                <div className="item-card-separator"></div>
+                <h3 className="item-type">{type ? type.charAt(0).toUpperCase() + type.slice(1) : ''}</h3>
+                <div className="item-card-separator"></div>
+                <p>{description}</p>
+            </main>
         </article>
     )
 }

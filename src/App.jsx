@@ -4,6 +4,8 @@ import { Header } from './components/Header.jsx'
 import { Footer } from './components/Footer.jsx'
 import { ItemList } from './components/ItemList.jsx'
 import { SearchBar } from './components/SearchBar.jsx'
+import { Pagination } from './components/Pagination.jsx'
+import { WebTitle } from './components/WebTitle.jsx'
 
 function App() {
   const [items, setItems] = useState([])
@@ -11,7 +13,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState('')
 
   useEffect(() => {
-    fetch('/public/items.json')
+    fetch(`${import.meta.env.BASE_URL}items.json`)
       .then((response) => {
         if (!response.ok) {
           throw new Error('Error al cargar items.json');
@@ -32,11 +34,23 @@ function App() {
     item.name.toLowerCase().includes(searchTerm.toLowerCase())
   )
 
+  const [currentPage, setCurrentPage] = useState(1)
+  
+  const itemsPerPage = 12
+  const indexOfLastItem = currentPage * itemsPerPage
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage
+  const currentItems = filteredItems.slice(indexOfFirstItem, indexOfLastItem)
+  
+  const totalPages = Math.ceil(filteredItems.length / itemsPerPage)
+
   return (
     <div className='app-container'>
       <Header />
 
       <main className='content'>
+
+        <WebTitle />
+
         <SearchBar 
           searchTerm={searchTerm} 
           onSearchChange={setSearchTerm} 
@@ -48,8 +62,14 @@ function App() {
             <p className='loading'>Loading The Binding of Isaac items...</p>
           </div>
         ) : (
-          <ItemList items={filteredItems} />
+          <ItemList items={currentItems} />
         )}
+
+        <Pagination 
+          currentPage={currentPage}
+          totalPages={totalPages}
+          onPageChange={(newPage) => setCurrentPage(newPage)}
+        />
       </main>
       
       <Footer />
