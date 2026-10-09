@@ -1,7 +1,9 @@
 export function ItemCard({ item }) {
     const { id, name, type, description, quality, icon } = item
 
-    return(
+    const iconUrl = icon ? `${import.meta.env.BASE_URL}${icon.replace(/^\//, '')}` : ''
+
+    return (
         <article className="item-card">
             <header className="item-card-header">
                 <h3 className="item-id">#{id}</h3>
@@ -9,7 +11,7 @@ export function ItemCard({ item }) {
             </header>
 
             <div className="item-icon-container">
-                <img src={icon} alt={`{Icono de ${name}`} className="item-icon"/>
+                <img src={iconUrl} alt={`Icono de ${name}`} className="item-icon" />
             </div>
             <main>
                 <h2 className="item-name">{name}</h2>
